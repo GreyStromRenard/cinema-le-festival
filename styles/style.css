@@ -1,0 +1,214 @@
+:root {
+    --margeDesktop: 120px;
+    --margeMobile: 60px;
+    --rouge: #FF4343;
+    --clementine:#F7B11E;
+    --sable:#FFF36A;
+    --noir:#0E1420;
+    --blanc:#FBFCF2;
+    --bleupass: #2A3175;
+    --fontMonserrat:'Montserrat', Arial, sans-serif;
+    --fontRaleway:'Raleway', sans-serif;
+    --fontHelvetica: 'Raleway', Helvetica, sans-serif;
+
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;;
+    background: var(--blanc);
+    align-items: center;
+    background-image: url("../src/img/banner.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-family: var(--fontHelvetica);
+    font-weight: 400;
+    height: 150px;
+    z-index: 7;
+}
+
+nav{
+    display: inline;
+    order: 1;
+    margin-left: 80px;
+}
+
+nav a{
+    padding: 3px;
+}
+
+.logo{
+    display: table;
+    order: 2;
+    margin: auto;
+}
+
+.banner{
+    height: 40%;
+    width: 20%;
+}
+
+input{
+    font-size: 15px;
+    text-align: start;
+    font-family: var(--fontMonserrat);
+    font-weight: lighter;
+    background-color: var(--blanc);
+    border: none;
+    border-bottom: solid 3px var(--noir);
+    color: var(--noir);
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+*:focus-visible{
+    outline: solid 1px var(--clementine);
+}
+
+a{
+    color: var(--noir);
+    margin: 20px;
+    font-family: var(--fontRaleway);
+    text-decoration: none;
+}
+
+.recherche{
+    display: flex;
+    margin: auto;
+    order: 3;
+}
+
+.recherche img{
+    margin-right: 10px;
+}
+
+.recherche input{
+    margin-right: 250px;
+}
+
+.head-page{
+    height: 710px;
+    background-image: url("../src/img/background-accueil1.png");
+    display: flex;
+    margin: 0;
+    font-family: var(--fontMonserrat);
+    color: var(--blanc);
+}
+
+
+.titre{
+    display: table;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 120px;
+    padding-top: 70px;
+    font-weight: 800;
+    width: 50%;
+}
+
+.titre h3{
+    font-weight: 400;
+    color: var(--clementine);
+    font-size: 22px;
+}
+
+.titre h1 span{
+    font-size: 54px;
+}
+
+.titre h1{
+    font-size: 44px;
+}
+
+.pass{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.pass p{
+    position: absolute;
+    text-align: right;
+    font-weight: 800;
+    background: var(--bleupass);
+    padding: 4px 12px;
+    margin-right: 15px;
+    margin-bottom: 110px;
+}
+
+.programme{
+    text-align: center;
+    font-family: var(--fontRaleway);
+}
+
+.program_films{
+    text-align: center;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 100px;
+    margin: 0 100px 50px 100px;
+    font-family: var(--fontMonserrat);
+}
+
+.filtre span{
+    padding: 20px;
+}
+.filtre{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.programme h2 {
+    margin-top: 150px;
+    font-size: 48px;
+}
+
+.films1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+
+}
+.films2{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.program_films img{
+    width: 240px;
+}
+
+section{
+    background-color: var(--blanc);
+}
+
+.program_films p{
+    width: 240px;
+    font-size: 18px; 
+}
+
+.program_films div .button1{
+    font-size: 18px;
+    font-family: var(--fontRaleway);
+    width: 429px;
+    height: 106px;
+    justify-self: center;
+}
+
+.program_films.button1 span{
+    background-color: red;
+}
