@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+:root {
+    --margeDesktop: 120px;
+    --margeMobile: 60px;
+    --rouge: #FF4343;
+    --clementine:#F7B11E;
+    --sable:#FFF36A;
+    --noir:#0E1420;
+    --blanc:#FBFCF2;
+}
+
+main{
+    font-family: 'Raleway', sans-serif;
+}
+
+.top-page{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.film_hero{
+    height: calc(100vh - 150px);
+    background-position: center;
+    background-size: cover;
+}
+
+.film_info{
+    display: flex;
+    margin:0 var(--margeDesktop);
+    margin-top: -140px;
+}
+.affiche{
+    display: flex;
+    flex-direction: column;
+}
+
+.affiche img{
+    width: 240px;
+}
+
+.affiche div{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: var(--margeMobile);
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.affiche div span{
+    background-color: var(--clementine);
+    color: var(--noir);
+    padding: 5px;
+    font-weight: 700;
+}
+
+.affiche div b{
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: 5px 10px;
+    font-weight: 700;
+}
+
+.description{
+    margin-left: 100px ;
+    font-family: Raleway, sans-serif;
+
+}
+
+h1{
+    color: var(--noir);
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Raleway';
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 b{
+    font-weight: 700;
+    font-size: 38px;
+    background-color: var(--sable);
+    padding: 2px 8px;
+    line-height: 100%;
+}
+h1 span {
+    
+    background-color: var(--sable);
+    padding: 2px 8px;
+    line-height: 100%;
+}
+
+.description div{
+    font-family: Raleway ;
+    margin-top: 100px;
+    flex-direction: column;
+    
+}
+
+.description div h4,.description div p{
+    margin-bottom: 20px;
+}
+
+h2{
+    margin: 80px var(--margeDesktop);
+    font-size: 32px;
+}
+
+
+.boutons_horaires{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-bottom: 20px;
+}
+
+.bouton_horaire{
+    text-align: center;
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: 10px 50px;
+    font-size: 15px;
+    font-weight: normal;
+    font-size: 12px;
+    transition: .25s;
+    line-height: 18px;
+}
+
+.bouton_horaire b{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bouton_horaire:hover{
+    background-color: var(--clementine);
+    color: var(--noir);
+}
+
+.horaires .text_reservation{
+    text-align: center;
+    margin: 20px 0 ;
+}
+
+.bouton_reserver{
+    background-color:rgb(197, 197, 197, .3);
+    color: var(--noir);
+    border: none;
+    padding: 5px 20px;
+    width: 220px;
+    font-size: 18px;
+    font-family: Raleway, sans-serif;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+.bouton_reserver p::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url('../asset/image/SVG/arrow_right.svg');
+}
+
+ul .list_photos{
+    display: flex;
+}
+
+.horaires p{
+    margin: 20px;
+    text-align: center;
+}
+
+.bande_annonce{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.bande_annonce h2{
+    text-align: center;
+}
+
+.bande_annonce div{
+    display: flex;
+    justify-content: space-around;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+iframe{
+    border: none;
+    margin: 0 25px;
+    width: 430px; 
+    height: 264px;
+    overflow: hidden;
+}
+
+.photo{
+    background-color: grey;
+    opacity: .5;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo h2{
+    text-align: center;
+    margin-bottom: 80px;
+
+}
+
+.photo ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px ;
+}
+
+.plus_de_seances p::after{
+    content:"";
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    background-image: url('../asset/image/SVG/arrow_right.svg');
+}
+
+.plus_de_seances{
+    background-color: var(--noir);
+    top: 0;
+    bottom: 0;
+    display: flex;
+    padding: 140px 0;
+    justify-content: center;
+}
+
+.plus_de_seances p{
+    display:flex;
+    align-items: center;
+    background-color: var(--rouge);
+    padding: 30px 55px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+footer{
+    padding:120px 0 100px 120px;
+    display: flex;
+    font-family: Raleway, sans-serif;
+    background-color: var(--noir);
+    color: var(--blanc);
+    flex-direction: column;
+    position: relative;
+
+}
+
+footer .barre_footer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.RS img{
+    margin: 60px 0;
+    padding-right: 60px;
+
+}
+
